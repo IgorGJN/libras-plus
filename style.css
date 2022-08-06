@@ -1,6 +1,9 @@
-body {
-    --color-primary: #222222;
-    --color-secundary: #DDDDDD;
+:root {
+    --background-color: #00030C;
+    --text-color: #FFFFFF;
+    --button-color: #167BF7;
+    --gray: #C0C0C0;
+    --button-efeito: #3C92FA;
 }
 
 * {
@@ -9,52 +12,224 @@ body {
 }
 
 @font-face {
-    font-family: 'libras';
-    src: url(libras.ttf);
-}
-
-@font-face {
     font-family: 'libras-black';
     src: url(libras-black.ttf);
 }
 
 body {
-    margin-top: 40vh;
-    background-color: var(--color-primary);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     text-align: center;
 }
 
-h1 {
-    color: white;
-    font-size: 8rem;
-    transition: 5s;
-    font-family: 'libras', sans-serif;
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
 }
 
-h1:hover {
-    color: red;
+.container__caixa {
+    margin: 5em 4em;
+    text-align: center;
 }
 
-h2 {
-    color: red;
-    font-size: 8rem;
-    transition: 5s;
-    font-family: 'libras-black', sans-serif;
+.container__image {
+    width: 100%;
 }
 
-h2:hover {
-    color: white;
+.container__titulo {
+    font-size: 2rem;
+    padding: 1em 0;
 }
 
+.libras {
+    display: inline;
+    font-family: libras-black;
+    font-size: 3rem;
+}
+
+.container__button {
+    display: block;
+    padding: 1em;
+    background-color: var(--button-color);
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin: 0.8em;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 2px solid var(--button-color);
+}
+
+.container__button:hover {
+    background-color: var(--button-efeito);    
+}
+
+.button__secundario {
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    margin-bottom: 0.5em;
+}
+
+.button__secundario:hover {
+    background-color: transparent;
+    border: 2px solid var(--button-efeito);
+    color: var(--button-efeito);
+}
+
+.container__aviso {
+    color: var(--gray);
+    font-size: 0.9em;
+}
+
+.secundario {
+    margin: 0 5em;
+    align-items: center;
+    height: 80vh;
+}
+
+.secundario__image {
+    padding: 2em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.descricao__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.1em 0;
+}
+
+.descricao__texto {
+    color: var(--gray);
+}
+
+.button__descricao {
+    margin: 0.8em 0 0;
+    padding: 0.5em 1em;
+    display: inline-block;
+}
+
+.dispositivos {
+    height: 80vh;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.dispositivos__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.dispositivos__lista {
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    gap: 0.5em;
+    list-style-type: none;
+}
+
+.rodape {
+    text-align: center;
+    margin: 0 10rem;
+}
+
+.rodape__logo {
+    font-size: 6rem;
+}
+
+.rodape__lista {
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+    text-align: center;
+    justify-content: space-between;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin: 1em;
+}
+
+.lista__link a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.rodape__texto {
+    margin: 0.5em 0 2em 0;
+}
 
 @media screen and (max-width: 500px) {
 
-    body {
-        margin: 20vh 5vw;
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .container__caixa {
+        margin: 20vh 1em 0 1em;
     }
 
-    h1, h2 {
-    font-size: 8rem;
-    margin-bottom: 20vh;
-    }   
+    .container__titulo {
+        font-size: 2rem;
+    }
+
+    .container__image {
+        width: 80vw;
+    }
+
+    .container__aviso {
+        padding: 0 2em;
+    }
+
+    .secundario {
+        margin: 3rem 10vw;
+    }
+
+    .container__descricao {
+        padding: 0;
+    }
+
+    .secundario__image {
+        width: 80vw;
+        padding: 0;
+    }
+
+    .dispositivos__titulo {
+        font-size: 2rem;
+    }
+
+    .dispositivos__lista {
+        flex-direction: column;
+        font-size: 1.5rem;
+    }
+
+    .dispositivos__image {
+        width: 80vw;
+    }
+
+    .rodape {
+        margin: 50vh 0 5vh 0;
+        padding: 0 2em;
+    }
+
+    .rodape__logo {
+        font-size: 4rem;
+    }
+
+    .rodape__lista {
+        flex-direction: column;
+    }
+
+
 }

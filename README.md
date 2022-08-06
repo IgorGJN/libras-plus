@@ -2,15 +2,16 @@
 
 ## 💻 Sobre o Projeto
 Praticando HTML e CSS com a Alura.
+Foi incluido o Layout mobile que não estava previsto no projeto inicial.
 
 ## 🔗 Como acessar
 Link -> [https://igorgjn.github.io/libras-plus/](https://igorgjn.github.io/libras-plus/)
 
 ### 📅 Ultima atualização 
-02 de Agosto de 2022
+06 de Agosto de 2022
 
 ## 🎨 Layout
-<code><img height="300px" src="assets/img/layout.png" alt="Layout do site"/></code>
+<code><img height="300px" src="img/layout.png" alt="Layout do site"/></code>
 <!--
 ## 🆕 Novidades
 Layout responsivo para mobile. 
@@ -25,7 +26,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <code><img height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5"/></code>
 <code><img height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS"/></code>
-<code><img height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JS"/></code>
 
 ## 📝 Licença
 
